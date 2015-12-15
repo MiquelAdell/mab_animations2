@@ -1,3 +1,17 @@
+html, body{
+  padding:0;
+  margin:0;
+  font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0099CC;
+}
+
+div {
+  padding: 1em;
+  margin: 1em;
+}
 .icon{
   width: 32px;
   height: 32px;
@@ -62,12 +76,6 @@
   width: 320px;
   height: 320px;
 }
-
-body{
-   font-family: monospace;
-   color: #0099CC;
-}
-
 
 .wheat {
   width: 32px;
