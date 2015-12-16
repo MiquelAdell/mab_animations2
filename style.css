@@ -12,21 +12,66 @@ div {
   padding: 1em;
   margin: 1em;
 }
+
 .icon{
   width: 32px;
   height: 32px;
   fill: #ccc;
 }
 
-.icon.is-check{
+.is-check{
   fill: #FE4365;
 }
 
-.icon.is-outlined{
+.is-outlined{
   stroke:  #FE4365;
   stroke-width: 2px;
   fill: transparent;
 }
+
+
+
+
+.is-hoverable:hover{
+  fill: #FE4365;
+  cursor: pointer;
+}
+
+.is-activeable:active{
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+.is-blured {
+  filter: url(#gaussianBlur);
+}
+
+.is-blur--onhover:hover {
+  filter: url(#gaussianBlur);
+}
+
+.is-pink--onhover:hover{
+  fill: pink;
+}
+
+.is-weird {
+  stroke-linecap: butt;
+  stroke: cyan;
+}
+
+.is-weird--onhover:hover {
+  fill: green;
+  stroke: purple;
+}
+
+.is-transit{
+   -webkit-transition: all .35s ease-out;
+  -moz-transition: all .35s ease-out;
+  -ms-transition: all .35s ease-out;
+  -o-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
 
 .icon.is-x2{
   width: 64px;
@@ -38,87 +83,44 @@ div {
   height: 128px;
 }
 
-.icon.is-hoverable:hover{
-  fill: #FE4365;
-  cursor: pointer;
-}
-
-.icon.is-activeable:active{
-  transform: scale(1.25);
-  cursor: pointer;
-}
-
-.icon.is-pink--onhover:hover{
-  fill: pink;
-}
-
-
-.icon.is-weird {
-  stroke-linecap: butt;
-  stroke: cyan;
-}
-
-.icon.is-weird--onhover:hover {
-  fill: green;
-  stroke: purple;
-}
-
-.icon.is-transit{
-   -webkit-transition: all .35s ease-out;
-  -moz-transition: all .35s ease-out;
-  -ms-transition: all .35s ease-out;
-  -o-transition: all .35s ease-out;
-  transition: all .35s ease-out;
-}
-
-
 .icon.is-x10{
   width: 320px;
   height: 320px;
 }
 
+
 .wheat {
-  width: 32px;
-  height: 100px;
+  width: 28px;
+  height: 64px;
 }
 
 .wheat.is-x2 {
-  width: 64px;
-  height: 200px;
+  width: 56px;
+  height: 128px;
 }
 
+.wheat.is-x4 {
+  width: 112px;
+  height: 256px;
+}
 
 .beer {
-  width: 60px;
-  height: 82px;
+  width: 55px;
+  height: 58px;
 }
 
 .beer.is-x2 {
-  width: 120px;
+  width: 110px;
   height: 164px;
 }
 
-
-.beer.is-weird {
-    stroke:#D4A4ff;
-    fill: #FE4365;
+.beer.is-x4 {
+  width: 220px;
+  height: 328px;
 }
 
-.beer.is-weird .st0{fill:#D4A4ff;}
-.beer.is-weird .st1{fill:#F6EEff;}
-.beer.is-weird .st2{fill:#E2D7ff;}
-.beer.is-weird .st3{fill:#D884ff;}
-.beer.is-weird .st4{fill:#EB9Fff;}
-.beer.is-weird .st5{fill:#EAB9ff;}
 
-.beer.is-weird--onhover:hover {
-  fill:#00A436;
-  stroke: red;
+.wheatField {
+  width: 160px;
+  height: 270px;
 }
-
-.beer.is-weird--onhover:hover .st0{fill:#00A436;}
-.beer.is-weird--onhover:hover .st1{fill:#00EEDC;}
-.beer.is-weird--onhover:hover .st2{fill:#00D7BD;}
-.beer.is-weird--onhover:hover .st3{fill:#008430;}
-.beer.is-weird--onhover:hover .st4{fill:#009F42;}
-.beer.is-weird--onhover:hover .st5{fill:#00B96C;}
