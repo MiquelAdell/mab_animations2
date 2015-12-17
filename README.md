@@ -1,6 +1,6 @@
 #Readme
 just some tests for SVG.
-**Version** 0.2.2
+**Version** 0.3.0
 
 ##Credits
 based on: http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
@@ -15,7 +15,7 @@ from: @legomushroom
 
 ##TODO
 * Load SVGs via ajax
-* animate on scroll 
+* animate on scroll http://scrollmagic.io/
 * look into animating with Adobe Edge Animate https://www.youtube.com/watch?v=O6kNFjOHqGc
 * maybe that: http://www.sitepoint.com/svg-styling-with-css/
 * and in the future that: https://css-tricks.com/gotchas-on-getting-svg-into-production/
