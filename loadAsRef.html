@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
 	<style>
 	.is-blured {
-	  filter: url(svg/filters.svg#gaussianBlur);
+	  filter: url('svg/filters.svg#gaussianBlur');
 	}
 	</style>
 </head>
@@ -39,14 +39,14 @@
 			<li>
 				Inset shadow from SVG filters applied via group<br>
 				<svg class="icon is-x4 " viewBox="0 0 32 32">
-					<g filter="url(svg/filters.svg#inset-shadow)">
+					<g filter="url('svg/filters.svg#inset-shadow')">
 						<use xlink:href="svg/heart.svg#heart"></use>
 					<g>
 				</svg>
 			</li>
 
 			<li>
-				Gaussian blur applied via filter: url(svg/filters.svg#gaussianBlur); in the css<br>
+				Gaussian blur applied via filter: url('svg/filters.svg#gaussianBlur'); in the css<br>
 				<svg class="icon is-x4 is-blured" viewBox="0 0 32 32">
 					<use xlink:href="svg/heart.svg#heart"></use>
 				</svg>
