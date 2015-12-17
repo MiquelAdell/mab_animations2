@@ -15,7 +15,7 @@ from: @legomushroom
 
 ##TODO
 * Load SVGs via ajax
-* animate on scroll
-* look into "waving" animations
+* animate on scroll 
+* look into animating with Adobe Edge Animate https://www.youtube.com/watch?v=O6kNFjOHqGc
 * maybe that: http://www.sitepoint.com/svg-styling-with-css/
 * and in the future that: https://css-tricks.com/gotchas-on-getting-svg-into-production/
