@@ -252,7 +252,12 @@
 
 	<div>
 		<h1>SVG icon test</h1>
-		<iframe width="100%" height="200px" src="README.md" frameborder="0"></iframe>
+		<p><a href="README.md">Readme</a></p>
+		<p>
+			for the loading test see:<br>
+			<a href="loadAsRef.php">loading by references</a><br>
+			<a href="loadAsPhp.php">loading with php include</a><br>
+		</p>
 	</div>
 
 	<div class="hearts">
@@ -380,58 +385,6 @@
 			<use xlink:href="#clock"></use>
 		</svg>
 	</div>
-
-	<div>
-		<h2>External loading</p>
-		<h3>SVG loaded as an OBJECT</h3>
-		<ul>
-			<li>Not directly affected by filters applied via css (b)</li>
-			<li>Can't be referenced again (c)</li>
-		</ul>
-		(a)
-		<object type="image/svg+xml" data="svg/circle.svg" class="icon">
-	  		<!-- fallback image in CSS -->
-		</object>
-		(b)
-		<object type="image/svg+xml" data="svg/circle.svg" class="icon is-blured">
-	  		<!-- fallback image in CSS -->
-		</object>
-		(c)
-		<svg class="icon is-x4 is-blured" viewBox="0 0 428 428">
-			<use xlink:href="#circle"></use>
-		</svg>
-
-		<h3>Include with php</h3>
-		<p>The php test can be found <a href="loadAsPhp.php">here</a></p>
-
-		<h3>use with foreign file</h3>
-		(a)
-		<svg class="icon is-x4" viewBox="0 0 463 371">
-			<use xlink:href="svg/speech.svg#speech" />
-		</svg>
-		(b)
-		<svg class="icon is-x4 is-painted" viewBox="0 0 463 371">
-			<use xlink:href="svg/speech.svg#speech" />
-		</svg>
-		(c)
-		<svg class="icon is-x4 is-blured" viewBox="0 0 463 371">
-			<use xlink:href="svg/speech.svg#speech" />
-		</svg>
-		(d)
-		<svg class="icon is-x4" viewBox="0 0 463 371">
-			<g filter="url(#color-shadow)">
-				<use xlink:href="svg/speech.svg#speech" />
-			</g>
-		</svg>
-
-
-	</div>
-
-
-
-
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="javascript/functions.js"></script>

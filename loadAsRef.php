@@ -16,10 +16,7 @@
 	<div>
 
 		<!-- filters -->
-		<svg style="position:absolute;margin-left: -100%;" width="0">
-			<use xlink:href="svg/filters.svg"></use>
-		</svg>
-
+		
 		<h2>External loading</p>
 
 		<h3>Load as Ref</h3>
