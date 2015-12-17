@@ -9,6 +9,8 @@ $(function(){
         document.getElementById('minute-hand').setAttribute('transform', 'rotate('+360*(minutes/HOUR)+',16,17)');
         document.getElementById('hour-hand').setAttribute('transform', 'rotate('+360*(hours/(12*HOUR))+',16,17)');
     }
-    setTime();
-    var interval = setInterval(setTime,1000);
+    if($('#second-hand').size() && $('#minute-hand').size() && $('#hour-hand').size()){
+        setTime();
+        var interval = setInterval(setTime,1000);
+    }
 });
