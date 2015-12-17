@@ -1,5 +1,6 @@
 #Readme
-just some tests for SVG
+just some tests for SVG.
+**Version** 0.2.0
 
 ##Credits
 based on: http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
