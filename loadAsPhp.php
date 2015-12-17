@@ -20,7 +20,7 @@
 	</div>
 
 	<div>
-		<h2>External loading</p>
+		<h2>External loading</h2>
 
 		<h3>Include with php</h3>
 
@@ -40,7 +40,7 @@
 				</svg>
 			</li>
 
-			
+
 			<li>
 				Inset shadow from SVG filters applied via group<br>
 				<svg class="icon is-x4 " viewBox="0 0 32 32">

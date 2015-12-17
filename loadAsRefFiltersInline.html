@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
+</head>
+
+<body>
+
+	<div>
+		<svg height="0" style="position:absolute;margin-left: -100%;" width="0">
+			<filter id='inset-shadow'>
+				<!-- Shadow offset -->
+				<feoffset dx='0' dy='0'></feoffset><!-- Shadow blur -->
+				<fegaussianblur result='offset-blur' stddeviation='1'></fegaussianblur><!-- Invert drop shadow to make an inset shadow-->
+				<fecomposite in='SourceGraphic' in2='offset-blur' operator='out' result='inverse'></fecomposite><!-- Cut colour inside shadow -->
+				<feflood flood-color='black' flood-opacity='.95' result='color'></feflood>
+				<fecomposite in='color' in2='inverse' operator='in' result='shadow'></fecomposite><!-- Placing shadow over element -->
+				<fecomposite in='shadow' in2='SourceGraphic' operator='over'></fecomposite>
+			</filter>
+
+			<filter color-interpolation-filters="sRGB" data-iconmelon='filter:d8b3243222f113cd0dd357f0aaed2ee9' id='color-shadow'>
+				<fecomponenttransfer in="SourceGraphic">
+					<fefuncr tablevalues=".5" type="discrete"></fefuncr>
+					<fefuncg tablevalues=".5" type="discrete"></fefuncg>
+					<fefuncb tablevalues=".5" type="discrete"></fefuncb>
+				</fecomponenttransfer>
+				<fegaussianblur stddeviation=".85"></fegaussianblur>
+				<feoffset dx="1" dy="1" result="shadow"></feoffset>
+				<fecomposite in="SourceGraphic" in2="shadow" operator="over"></fecomposite>
+			</filter>
+
+
+			<filter id="gaussianBlur" >
+				<feGaussianBlur stdDeviation="1" />
+			</filter>
+		</svg>
+
+		<h2>Inline loading</h2>
+
+		<ol>
+			<li>
+				Basic loading<br>
+				<svg class="icon is-x4" viewBox="0 0 32 32">
+					<use xlink:href="svg/heart.svg#heart"></use>
+				</svg>
+			</li>
+
+			<li>
+				Altering fill property via CSS property<br>
+				<svg class="icon is-x4 is-check" viewBox="0 0 32 32">
+					<use xlink:href="svg/heart.svg#heart"></use>
+				</svg>
+			</li>
+
+			<li>
+				Inset shadow from SVG filters applied via group<br>
+				<svg class="icon is-x4 " viewBox="0 0 32 32">
+					<g filter="url(#inset-shadow)">
+						<use xlink:href="svg/heart.svg#heart"></use>
+					<g>
+				</svg>
+			</li>
+
+			<li>
+				Gaussian blur applied via filter: url(#gaussianBlur); in the css<br>
+				<svg class="icon is-x4 is-blured" viewBox="0 0 32 32">
+					<use xlink:href="svg/heart.svg#heart"></use>
+				</svg>
+			</li>
+		</ol>
+	</div>
+</body>
+
+</html>
