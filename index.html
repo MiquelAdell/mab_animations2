@@ -389,32 +389,38 @@
 			<li>Can't be referenced again (c)</li>
 		</ul>
 		(a)
-		<object type="image/svg+xml" data="heart.svg" class="icon">
+		<object type="image/svg+xml" data="svg/circle.svg" class="icon">
 	  		<!-- fallback image in CSS -->
 		</object>
 		(b)
-		<object type="image/svg+xml" data="wheatField.svg" class="icon is-blured">
+		<object type="image/svg+xml" data="svg/circle.svg" class="icon is-blured">
 	  		<!-- fallback image in CSS -->
 		</object>
 		(c)
-		<svg class="icon is-x4 is-blured" viewBox="0 0 32 32">
-			<use xlink:href="#heart2"></use>
+		<svg class="icon is-x4 is-blured" viewBox="0 0 428 428">
+			<use xlink:href="#circle"></use>
 		</svg>
 
 		<h3>Include with php</h3>
-		<p>The php test can be found <a href="test.php">here</a></p>
+		<p>The php test can be found <a href="loadAsPhp.php">here</a></p>
 
 		<h3>use with foreign file</h3>
-		<svg class="icon is-x4" viewBox="0 0 453.7 767.2">
-			<use xlink:href="heart.svg#heart" />
+		(a)
+		<svg class="icon is-x4" viewBox="0 0 463 371">
+			<use xlink:href="svg/speech.svg#speech" />
 		</svg>
-		<svg class="icon is-x4 is-blured" viewBox="0 0 453.7 767.2">
-			<use xlink:href="icon.svg#wheatField" />
+		(b)
+		<svg class="icon is-x4 is-painted" viewBox="0 0 463 371">
+			<use xlink:href="svg/speech.svg#speech" />
 		</svg>
-
-		<svg class="wheatField is-x4 is-blured" viewBox="0 0 453.7 767.2">
+		(c)
+		<svg class="icon is-x4 is-blured" viewBox="0 0 463 371">
+			<use xlink:href="svg/speech.svg#speech" />
+		</svg>
+		(d)
+		<svg class="icon is-x4" viewBox="0 0 463 371">
 			<g filter="url(#color-shadow)">
-				<use xlink:href="wheatField.svg#wheatField" />
+				<use xlink:href="svg/speech.svg#speech" />
 			</g>
 		</svg>
 
