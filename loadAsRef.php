@@ -1,62 +1,58 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset=utf-8 />
 	<link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
 	<style>
 	.is-blured {
-	  filter: url(#gaussianBlur);
+	  filter: url(svg/filters.svg#gaussianBlur);
 	}
 	</style>
 </head>
 
 <body>
 
-	<div height="0" style="position:absolute;margin-left: -100%;" width="0">
-		<?php echo file_get_contents("svg/filters.svg"); ?>
-	</div>
-	<div height="0" style="position:absolute;margin-left: -100%;" width="0">
-		<?php echo file_get_contents("svg/heart.svg"); ?>
-	</div>
-
 	<div>
+
+		<!-- filters -->
+		
 		<h2>External loading</p>
 
-		<h3>Include with php</h3>
-
-
+		<h3>Load as Ref</h3>
+		<h4>With the filters loaded as REF too</h4>
 		<ol>
 			<li>
 				Basic loading<br>
 				<svg class="icon is-x4" viewBox="0 0 32 32">
-					<use xlink:href="#heart"></use>
+					<use xlink:href="svg/heart.svg#heart"></use>
 				</svg>
 			</li>
 
 			<li>
 				Altering fill property via CSS property<br>
 				<svg class="icon is-x4 is-check" viewBox="0 0 32 32">
-					<use xlink:href="#heart"></use>
+					<use xlink:href="svg/heart.svg#heart"></use>
 				</svg>
 			</li>
 
-			
 			<li>
 				Inset shadow from SVG filters applied via group<br>
 				<svg class="icon is-x4 " viewBox="0 0 32 32">
-					<g filter="url(#inset-shadow)">
-						<use xlink:href="#heart"></use>
+					<g filter="url(svg/filters.svg#inset-shadow)">
+						<use xlink:href="svg/heart.svg#heart"></use>
 					<g>
 				</svg>
 			</li>
 
 			<li>
-				Gaussian blur applied via filter: url(#gaussianBlur); in the css<br>
+				Gaussian blur applied via filter: url(svg/filters.svg#gaussianBlur); in the css<br>
 				<svg class="icon is-x4 is-blured" viewBox="0 0 32 32">
-					<use xlink:href="#heart"></use>
+					<use xlink:href="svg/heart.svg#heart"></use>
 				</svg>
 			</li>
 		</ol>
 	</div>
 </body>
+
 </html>
